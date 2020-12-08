@@ -69,7 +69,7 @@ function buildTable(input) {
     for (var i = 0; i < column.length; i++) {
         var header = document.createElement("th");
         header.innerHTML = column[i];
-
+        header.classList.add("thstyle");
         row.appendChild(header);
     }
 
@@ -80,7 +80,7 @@ function buildTable(input) {
         tableRow = table.insertRow(-1);
         for (var j = 0; j < column.length; j++) {
             var outputRow = tableRow.insertCell(-1);
-
+            outputRow.classList.add("mystyle");
 
             outputRow.innerHTML = input[i][column[j]];
         }

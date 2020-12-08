@@ -2,7 +2,7 @@ body{
   margin: 0;
   padding: 0;
   font-family: 'Oswald', sans-serif;
-  font-size: 1.2em;
+  font-size: 1.4em;
   line-height: 1.5em;
 }
 
@@ -10,7 +10,7 @@ body{
   background-color: white;
   height: 300vh;
   display: grid;
-  grid-template-columns: 1fr repeat(4, minmax(0,300px)) 1fr;
+  grid-template-columns: 1fr repeat(4, minmax(0,350px)) 1fr;
   grid-gap: 0px;
   grid-template-rows:100px 250px min-content min-content min-content min-content min-content 1fr;
 
@@ -30,18 +30,28 @@ body{
 
   grid-column-gap: 2vmin;
   grid-row-gap: 2vmin;
-
+  font-size: 1em;
 }
 
 #table{
   /* background-color: #FFDAB9; */
-  border: 2px groove;
+
+  box-shadow: 5px 5px 13px #7C7C7C,
+            -8px -8px 15px #DDDDDD;
+            border-radius: 30px;
+
+
   border-radius: 10px;
   line-height: 1.5em;
-  padding:2em;
-  margin: 2em;
-  grid-column-gap: 2em;
-  grid-row-gap: 2em;
+  padding:4em;
+
+}
+.table{
+
+}
+.tbody{
+  /* border-style: 2px dashed; */
+
 }
 
 
@@ -69,14 +79,28 @@ body{
 
 
 }
+p:not(.footer){
+  box-shadow:
+   12px 12px 16px 0 rgba(85, 85, 85, 0.2) inset,
+   -8px -8px 12px 0 rgba(216, 216, 216, .17) inset;
+   padding: 1.5em;
+   border-radius: 20px;
+}
+img:not(.logo){
+  box-shadow: 5px 5px 13px #7C7C7C,
+            -8px -8px 15px #DDDDDD;
+            border-radius: 20px;
+}
 .header .nav a{
   text-decoration: none;
-  border: 2px solid #E7717D;
+
   border-radius: 50em;
   color: #E7717D;
   padding: 15px 30px;
   margin: 0 8px;
   font-weight: bold;
+  box-shadow: 2px 2px 6px #A7575F,
+            -4px -4px 7px #EB9EA6;
 
 
 }
@@ -121,8 +145,10 @@ body{
 }
 
 .button{
+  box-shadow: 5px 5px 13px #879D63,
+            -8px -8px 15px #CAE2A3;
   text-decoration: none;
-  border: 2px solid #AFD275;
+  background: linear-gradient(135deg, rgba(0,0,0,0.11), rgba(255,255,255,0.13));
   border-radius: 50em;
   background-color: #AFD275;
   color: white;
@@ -130,7 +156,7 @@ body{
   margin: 0 8px;
   font-weight: bold;
   float: right;
-
+  margin-bottom: 4em;
 
 }
 
@@ -152,6 +178,19 @@ body{
   grid-area: imgbox_3;
 }
 
+.mystyle{
+
+padding: 0.5em;
+font-size: 1em;
+opacity: 90%;
+}
+
+.thstyle{
+  padding-top: 2em;
+  font-size: 1em;
+  color: black;
+}
+
 /* .content{
 
   display: flex;
@@ -164,8 +203,6 @@ body{
 
 .footer{
   margin-top: 20em;
-  color: #333;
-  background-color: grey;
   grid-area: footer;
   text-align: center;
 

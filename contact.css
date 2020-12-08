@@ -2,7 +2,7 @@ body{
   margin: 0;
   padding: 0;
   font-family: 'Oswald', sans-serif;
-  font-size: 1.2em;
+  font-size: 1.4em;
   line-height: 1.5em;
 }
 
@@ -10,7 +10,7 @@ body{
   background-color: white;
   height: 150vh;
   display: grid;
-  grid-template-columns: 1fr repeat(4, minmax(0,300px)) 1fr;
+  grid-template-columns: 1fr repeat(4, minmax(0,350px)) 1fr;
   grid-gap: 0px;
   grid-template-rows:100px 250px min-content min-content min-content min-content 1fr;
 
@@ -32,6 +32,8 @@ body{
   align-items: center;
   justify-content: space-between;
   width: 100%;
+  border-radius: 20%;
+
 }
 .header .logo{
   width: 85px;
@@ -49,12 +51,14 @@ body{
 }
 .header .nav a{
   text-decoration: none;
-  border: 2px solid #E7717D;
+
   border-radius: 50em;
   color: #E7717D;
   padding: 15px 30px;
   margin: 0 8px;
   font-weight: bold;
+  box-shadow: 2px 2px 6px #A7575F,
+            -4px -4px 7px #EB9EA6;
 
 
 }
@@ -108,7 +112,7 @@ body{
 
 .button{
   text-decoration: none;
-  border: 2px solid #AFD275;
+  background: linear-gradient(135deg, rgba(0,0,0,0.11), rgba(255,255,255,0.13));
   border-radius: 50em;
   background-color: #AFD275;
   color: white;
@@ -116,10 +120,17 @@ body{
   margin: 0 8px;
   font-weight: bold;
   float: right;
-
+  box-shadow: 5px 5px 13px #879D63,
+            -8px -8px 15px #CAE2A3;
 
 }
 
+img:not(.logo){
+  box-shadow: 5px 5px 13px #7C7C7C,
+            -8px -8px 15px #DDDDDD;
+            border-radius: 30px;
+
+}
 .imgbox_1{
   display: flex;
   justify-content: flex-end;
@@ -156,8 +167,6 @@ body{
 
 .footer{
   margin-top: 20em;
-  color: #333;
-  background-color: grey;
   grid-area: footer;
   text-align: center;
 

@@ -4,42 +4,42 @@ let brandgrid = document.getElementById('brandgrid');
 let brand_info = [
   {
 
-    "brand" : "Starbuck Coffee",
+    "brand" : "",
     "img" : "9.png",
     "discription" : "4 months"
   },
 
   {
 
-    "brand" : "AT&T",
+    "brand" : "",
     "img" : "10.png",
     "discription" : "4 months"
   },
 
   {
 
-    "brand" : "Bank of America",
+    "brand" : "",
     "img" : "12.png",
     "discription" : "2 months"
   },
 
   {
 
-    "brand" : "Delta Airlines",
+    "brand" : "",
     "img" : "11.png",
     "discription" : "6 months"
   },
 
   {
 
-    "brand" : "NYPD",
+    "brand" : "",
     "img" : "13.png",
     "discription" : "8 months"
   },
 
   {
 
-    "brand" : "Sephora",
+    "brand" : "",
     "img" : "14.png",
     "discription" : "3 months"
   }
